@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguros García y Asociados</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  
+    <header>
+      <div class="logo-container">
+        <img src="3459_Logo_Seguros_Grupo_Asistencia-01.png" alt="Logo de Seguros García y Asociados" class="logo"height="100px">
+      </div>
+    <nav>
+      <ul>
+        <li><a href="#principal">INICIO</a></li>
+        <li><a href="#services">SERVICIOS</a></li>
+        <li><a href="#portfolio">PORTAFOLIO</a></li>
+        <li><a href="#contact">CONTACTO</a></li>
+      </ul>
+    </nav>
+    <h1 class="title" id="principal">Seguros García y Asociados</h1>
+
+    <span>Somos una empresa líder en el mercado de seguros,</span> 
+     <span>soluciones integrales y personalizadas a nuestros clientes</span>
+  </header>
+
+  <hr>
+
+  <main>
+    <article id="services">
+      <h3 class="title"></h3>
+      
+      <p class="description">Nuestro equipo de asesores está compuesto por profesionales con amplia experiencia en el mercado de seguros
+      <p>Me dedico a la venta de seguros de todo tipo</p>
+    </article>
+
+    <hr>
+
+    <!-- Lista de productos -->
+    <ul id="product-list">
+      <li><a href="#" class="product-link" data-product="1">Product 1</a></li>
+      <li><a href="#" class="product-link" data-product="2">Product 2</a></li>
+      <li><a href="#" class="product-link" data-product="3">Product 3</a></li>
+    </ul>
+
+    <!-- Sección de información de productos -->
+    <div id="product-info-1" class="product-info" style="display: none;">
+      <h2>Product 1</h2>
+      <img src="./images/portada.png" alt="Imagen del Producto 1">
+      <p>Descripción detallada del producto 1: Este producto ofrece cobertura completa para...</p>
+    </div>
+
+    <div id="product-info-2" class="product-info" style="display: none;">
+      <h2>Product 2</h2>
+      <img src="ruta/a/imagen2.jpg" alt="Imagen del Producto 2">
+      <p>Descripción detallada del producto 2: Este producto es ideal para aquellos que...</p>
+    </div>
+
+    <div id="product-info-3" class="product-info" style="display: none;">
+      <h2>Product 3</h2>
+      <img src="ruta/a/imagen3.jpg" alt="Imagen del Producto 3">
+      <p>Descripción detallada del producto 3: Con este producto, puedes estar seguro de que...</p>
+    </div>
+
+    <hr>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="quienes-somos">
+      <h2>Quiénes somos</h2>
+      <div>
+       
+       <span>Nuestra visión es ser líderes en el mercado de seguros, brindando soluciones integrales y personalizadas a nuestros clientes</span> 
+       <span>Misión: es brindar tranquilidad y seguridad financiera a nuestros clientes, a través de productos y servicios de alta calidad</span>
+       <span>Objetivo: es ser la compañía de seguros preferida por nuestros clientes, ofreciendo un servicio excepcional y una atención personalizada</span> ofreciendo un servicio excepcional y una atención personalizada
+      <span>Nuestra dirección: Cra 43b #75b-84 Colombia</span> 
+       <span>contactarnos al teléfono +57-3188963782 o a través de nuestro formulario de contacto.</span>
+      </div>
+     </section>
+
+    <hr>
+
+    <!-- Bloque de imágenes separado por secciones -->
+    <article id="portfolio">
+      <div class="imagen1">
+        <img src="./images/portada.png" class="logo" height="200px">
+      </div>
+
+      <hr>
+
+      <div id="autos-container">
+        <h4 class="title">Autos</h4>
+        <img src="./images/Automovil.png" class="logo" height="200px">
+      </div>
+
+      <hr>
+
+      <div class="imagen3">
+        <h4 class="title">VIDA</h4>
+        <img src="./images/vida.png" class="logo" height="200px">
+      </div>
+
+      <hr>
+
+      <div class="imagen1">
+        <h4 class="title">VIAJE</h4>
+        <img src="./images/Assist card.png " class="logo" height="200px">
+      </div>
+    </article>
+    
+    <!-- Sección de contacto -->
+    <section id="contact">
+      <h3>Contacto</h3>
+      <button id="show-contact-form">Mostrar Formulario de Contacto</button>
+      <div id="contact-form-container" style="display: none;">
+        <form id="contact-form">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required autocomplete="name">
+          <br>
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" name="apellidos" required autocomplete="family-name">
+          <br>
+          <label for="correo">Correo:</label>
+          <input type="email" id="correo" name="correo" required autocomplete="email">
+          <br>
+          <label for="asunto">Asunto:</label>
+          <input type="text" id="asunto" name="asunto" required autocomplete="subject">
+          <br>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <br>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+        <div id="form-result" style="display: none;">
+          <h4>Datos ingresados:</h4>
+          <p><strong>Nombre:</strong> <span id="result-nombre"></span></p>
+          <p><strong>Apellidos:</strong> <span id="result-apellidos"></span></p>
+          <p><strong>Correo:</strong> <span id="result-correo"></span></p>
+          <p><strong>Asunto:</strong> <span id="result-asunto"></span></p>
+          <p><strong>Mensaje:</strong> <span id="result-mensaje"></span></p>
+        </div>
+        <button id="back-to-main">Volver a la página principal</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Lideres en Seguros</p>
+  </footer>
+  
+      <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+body {
+    background-color: azure;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 20px;
+    color: black;
+}
+
+header {
+    background-color: #1f7a63;
+    color: #fff;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+    background-color: #f0f0f0;
+}
+
+article {
+    margin-bottom: 2rem;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin-top: 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ceebcf;
+    transition: background-color 0.5s ease;
+}
+
+button[type="submit"]:active {
+    background-color: #ddebe0fa;
+    transition: background-color 0.5s ease;
+}
+
+footer {
+    background-color: #1f7a63;
+    color:white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: w;
+    text-decoration: none;
+}
+
+.imagenes {
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.imagenes img {
+    width: 20%;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+h4 {
+    text-align: center;
+}
+
+
+.logo {
+    border: 2px solid #ddd; /* Borde de 2px sólido y color gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: border-color 0.3s ease; /* Transición suave para el cambio de color del borde */
+  }
+  
+  /* Estilos para el efecto hover */
+  .logo:hover {
+    border-color: #1f7a63; /* Cambia el color del borde al verde de tu elección al pasar el cursor */
+  }
+
+.lista {
+    float: right;
+}
+
+#nosotros {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f2f2f2;
+}
+
+#nosotros h2 {
+    margin-top: 0;
+}
+
+#product-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#product-list li {
+    margin-bottom: 10px;
+}
+
+.product-info {
+    display: none;
+}
+
+#form-result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color:#ceebcf;
+}
+
+.portada {
+    background-color: rgba(255, 228, 181, 0.5); /* Color manzana suave con opacidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos para las secciones de imágenes */
+.imagen1 {
+    background-color: #E6E6FA; /* Color de fondo para la primera imagen */
+    padding: 20px;
+}
+
+.imagen2 {
+    background-color: #d8ffb9a8; /* Color de fondo para la segunda imagen */
+    padding: 20px;
+}
+
+.imagen3 {
+    background-color: #B0E0E6; /* Color de fondo para la tercera imagen */
+    padding: 20px;
+}
+
+#autos-container {
+    background-color: #1e8847c2; /* Color verde muy suave */
+    padding: 20px; /* Agrega un poco de espacio alrededor de la imagen */
+    border-radius: 10px; /* Agrega bordes redondeados */
+  }
+/* Otros estilos */
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+  
+    header {
+      padding: 0.5rem;
+    }
+  
+    main {
+      padding: 1rem;
+    }
+  
+    article {
+      padding: 0.5rem;
+    }
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  
+    header {
+      padding: 1rem;
+      color: #000;
+    }
+  
+    main {
+      padding: 2rem;
+    }
+  
+    article {
+      padding: 1rem;
+    }
+  }
+  
+  /* Estilos para pantallas grandes */
+  @media screen and (min-width: 769px) {
+    body {
+      font-size: 18px;
+    }
+  
+    header {
+      padding: 2rem;
+    }
+  
+    main {
+      padding: 3rem;
+    }
+  
+    article {
+      padding: 1.5rem;
+    }
+  }
+
+  .cards {
+    border: 2px solid black;
+    width: fit-content;
+    padding: 0px 1em 1em 1em;
+    border-radius: 10px;
+  }
+
+  .cards :hover{
+    background-color: rgb(129, 216, 129);
+  }
+
+  #principal{
+    font-size: 1%;
+
+  }
+
+  #titulos {
+    border: 2px solid #e6b0b000;
+    /* viewport width */
+     width: 6o0vw;
+     margin: 4em;
+  }
+
+  .logo {
+    width: 200px;
+
+  }
+
